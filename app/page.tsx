@@ -20,6 +20,10 @@ import S from "@/components/FreakyLetters/S/Letter"
 import T from "@/components/FreakyLetters/T/Letter"
 import U from "@/components/FreakyLetters/U/Letter"
 import V from "@/components/FreakyLetters/V/Letter"
+import W from "@/components/FreakyLetters/W/Letter"
+import Y from "@/components/FreakyLetters/Y/Letter"
+import X from "@/components/FreakyLetters/X/Letter"
+import Z from "@/components/FreakyLetters/Z/Letter"
 
 export default function Home() {
   return (
@@ -46,6 +50,10 @@ export default function Home() {
     <T/>
     <U/>
     <V/>
+    <W/>
+    <Y/>
+    <X/>
+    <Z/>
     </>
 
   )
