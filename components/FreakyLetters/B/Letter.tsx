@@ -12,9 +12,9 @@ const Letter = ({index}:{
     return (
         <>
 
-        {index==1&&<div style={{width:128,height:200,border:"1px solid white"}}><B1/></div>}
-        {index==2&&<div style={{width:128,height:200,border:"1px solid white"}}><B2/></div>}
-        {index==3&&<div style={{width:128,height:200,border:"1px solid white"}}><B3/></div>}
+        {index==1&&<B1/>}
+        {index==2&&<B2/>}
+        {index==3&&<B3/>}
         
         </>
     );
