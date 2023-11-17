@@ -26,39 +26,72 @@ import W from "@/components/FreakyLetters/W/Letter"
 import Y from "@/components/FreakyLetters/Y/Letter"
 import X from "@/components/FreakyLetters/X/Letter"
 import Z from "@/components/FreakyLetters/Z/Letter"
+import { useState, Dispatch, SetStateAction } from "react"
 
-const Word = () => {
+interface stateObjectsType {
+    [key:number]:{
+        value:1|2|3,
+        set: Dispatch<SetStateAction<1|2|3>>
+    }
+}
+
+
+const Word = ({word}:{
+    word:string
+}) => {
+
+    const generateStates = (N:number) => {
+        let stateObjects:stateObjectsType = {}
+        for (let i=0; i<N; i++){
+            const [state,setState] = useState<1|2|3>(1)
+            stateObjects[i] = {
+                value: state,
+                set: setState
+            }
+        }
+        return stateObjects
+    }
+
+    const states = generateStates(word.length)
+    console.log(states)
+    console.log(states[0])
+
+    const letterMap = {
+        "A":A,
+        "B":B
+    }
+
 
     return (
         <>
-        
-        <A index={1}/>
-        <B index={1}/>
-        <C index={1}/>
-        <D index={1}/>
-        <E index={1}/>
-        <F index={1}/>
-        <G index={1}/>
-        <H index={1}/>
-        <I index={1}/>
-        <J index={1}/>
-        <K index={1}/>
-        <L index={1}/>
-        <M index={1}/>
-        <N index={1}/>
-        <O index={1}/>
-        <P index={1}/>
-        <Q index={1}/>
-        <R index={1}/>
-        <S index={1}/>
-        <T index={1}/>
-        <U index={1}/>
-        <V index={1}/>
-        <W index={1}/>
-        <Y index={1}/>
-        <X index={1}/>
-        <Z index={1}/>
-        
+
+        <button onClick={()=>{states[0].set(2)}}>0</button>
+
+        <div
+        style={{
+            width:"100%",
+            height:"100px",
+            display:"grid",
+            gridTemplateColumns:"repeat(12,1fr)",
+            border:"1px solid white"
+        }}
+        >
+
+            <S index={states[0].value}/>
+            <U index={1}/>
+            <C index={1}/>
+            <H index={1}/>
+            <S index={1}/>
+            <U index={1}/>
+            <C index={2}/>
+            <H index={1}/>
+            <N index={1}/>
+            <E index={1}/>
+            <S index={2}/>
+            <S index={3}/>
+            
+
+        </div>
         </>
     );
 }
