@@ -10,6 +10,7 @@ interface stateObjectsType {
     }
 }
 
+type letterTpye = "A"|"B"|"C"|"D"|"E"|"F"|"G"|"H"|"I"|"J"|"K"|"L"|"M"|"N"|"O"|"P"|"Q"|"R"|"S"|"T"|"U"|"V"|"X"|"Y"|"Z"
 
 const Word = ({word}:{
 
@@ -39,28 +40,38 @@ const Word = ({word}:{
         }
         return stateObjects
     }
-    const states = generateStates(3)
+    const states = generateStates(word.length)
 
     return (
         <>
 
-        <button onClick={()=>{states[0].set(cycle(states[0].value))}}>A</button>
-        <button onClick={()=>{states[1].set(cycle(states[1].value))}}>B</button>
-        <button onClick={()=>{states[2].set(cycle(states[2].value))}}>C</button>
+        {word.toUpperCase().split("").map((char,index)=>(
+            <button 
+            onClick={()=>{
+                states[index].set(cycle(states[index].value))
+            }}
+            style={{
+                border:"none",
+                padding:10,
+                marginRight:10
+            }}
+            >
+                {char}
+            </button>
+        ))}
 
         <div
         style={{
             width:"100%",
             height:"100px",
             display:"grid",
-            gridTemplateColumns:"repeat(12,1fr)",
-            border:"1px solid white"
+            gridTemplateColumns:"repeat(9,1fr)",
         }}
         >
-            <Letter states={states} letter="A" charKey={0}/>
-            <Letter states={states} letter="B" charKey={1}/>
-            <Letter states={states} letter="C" charKey={2}/>
-            
+            {word.toUpperCase().split("").map((char,index)=>(
+                //@ts-ignore
+                <Letter states={states} letter={char} charKey={index} />
+            ))}
         </div>
         </>
     );
