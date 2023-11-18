@@ -45,6 +45,10 @@ const Word = ({word}:{
     return (
         <>
 
+        <div style={{
+            margin:"1rem"
+        }}>
+
         {word.toUpperCase().split("").map((char,index)=>(
             <button 
             onClick={()=>{
@@ -59,6 +63,8 @@ const Word = ({word}:{
                 {char}
             </button>
         ))}
+
+        </div>
 
         <div
         style={{
