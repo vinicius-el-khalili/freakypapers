@@ -39,10 +39,10 @@ const Hero = () => {
             </div>
 
             <div className={`${style.freakyLetters} freakyLetters`}>
-                <Word word="a lazy dog"/>
-                <Word word="a lazy cat"/>
-                <Word word="a lazy bird"/>
-                <Word word="a lazy self"/>
+                <Word word="abcdefg"/>
+                <Word word="hijklmn"/>
+                <Word word="opqrstu"/>
+                <Word word="vxwyz"/>
             </div>
 
           </div>
