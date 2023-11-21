@@ -1,0 +1,15 @@
+.Letter {
+
+    height: 100px;
+    width:50px;
+    display: flex;
+    @media screen and (max-width:1000px) {
+        height: 70px;
+        width: 35px;
+    }
+    @media screen and (max-width:400px) {
+        height: 50px;
+        width: 25px;
+    }
+
+}

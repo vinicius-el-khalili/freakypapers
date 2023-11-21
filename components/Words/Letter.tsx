@@ -1,4 +1,6 @@
 import { Dispatch,SetStateAction } from "react"
+import style from "@/sass/Letter.module.scss"
+
 import A from "@/components/FreakyLetters/A/Letter"
 import B from "@/components/FreakyLetters/B/Letter"
 import C from "@/components/FreakyLetters/C/Letter"
@@ -74,11 +76,7 @@ const Letter = ({states,letter,charKey}:{
 
     return (
         <>
-        <div style={{
-            width:50,
-            height:100,
-            display:"flex",
-        }}>
+        <div className={style.Letter}>
             {charMap[letter]}
         </div>
         </>
