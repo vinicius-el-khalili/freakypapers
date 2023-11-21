@@ -25,6 +25,7 @@ import W from "@/components/FreakyLetters/W/Letter"
 import Y from "@/components/FreakyLetters/Y/Letter"
 import X from "@/components/FreakyLetters/X/Letter"
 import Z from "@/components/FreakyLetters/Z/Letter"
+import Space from "../FreakyLetters/SPACE/Space"
 
 const Letter = ({states,letter,charKey}:{
 
@@ -34,7 +35,7 @@ const Letter = ({states,letter,charKey}:{
             set: Dispatch<SetStateAction<1|2|3>>
         }
     }
-    letter:"A"|"B"|"C"|"D"|"E"|"F"|"G"|"H"|"I"|"J"|"K"|"L"|"M"|"N"|"O"|"P"|"Q"|"R"|"S"|"T"|"U"|"V"|"X"|"Y"|"Z",
+    letter:"A"|"B"|"C"|"D"|"E"|"F"|"G"|"H"|"I"|"J"|"K"|"L"|"M"|"N"|"O"|"P"|"Q"|"R"|"S"|"T"|"U"|"V"|"X"|"Y"|"Z"|" ",
     charKey:number
 
 }) => {
@@ -67,12 +68,19 @@ const Letter = ({states,letter,charKey}:{
         "Y":<Y index={states[charKey].value}/>,
         "X":<X index={states[charKey].value}/>,
         "Z":<Z index={states[charKey].value}/>,
+        " ":<Space/>
 
     }
 
     return (
         <>
-        {charMap[letter]}
+        <div style={{
+            width:50,
+            height:100,
+            display:"flex",
+        }}>
+            {charMap[letter]}
+        </div>
         </>
     );
 }
