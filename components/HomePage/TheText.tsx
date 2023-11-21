@@ -6,7 +6,6 @@ import Word from "@/components/Words/word"
 
 
 const TheText = () => {
-    
     return (
         <div className={style.freakyLetters}>
           <Word word="The quick"/>

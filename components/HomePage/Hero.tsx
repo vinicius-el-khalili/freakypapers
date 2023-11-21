@@ -3,6 +3,7 @@
 import gsap from "gsap"
 import style from "@/sass/Home.module.scss"
 import { useLayoutEffect, useRef } from "react"
+import Word from "../Words/word"
 
 const Hero = () => {
 
@@ -22,16 +23,32 @@ const Hero = () => {
     },[])
 
     return (
-        <div className={`${style.hero} hero`} ref={rootRef} >
-            <h1 className="heroH1">
-                <div>MAGAZINE</div>
-                <div>LETTERS</div>
-            </h1>
-            <div className={`${style.separator} separator`}/>
-            <p className="paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
+        <div className={style.Home}>
+          <div className={style.gridContainer}>
+
+            <div className={`${style.hero} hero`} ref={rootRef} >
+                <h1 className="heroH1">
+                    <div>MAGAZINE</div>
+                    <div>LETTERS</div>
+                </h1>
+
+                <div className={`${style.separator} separator`}/>
+                <p className="paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+            </div>
+
+            <div className={`${style.freakyLetters} freakyLetters`}>
+                <Word word="a lazy dog"/>
+                <Word word="a lazy cat"/>
+                <Word word="a lazy bird"/>
+                <Word word="a lazy self"/>
+            </div>
+
+          </div>
         </div>
+
+        
     );
 }
  

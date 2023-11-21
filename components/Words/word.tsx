@@ -43,9 +43,11 @@ const Word = ({word}:{
 
     const states = generateStates(word.length)
     const getRandomInteger = (n:number)=>{return Math.floor(Math.random()*n)}
+    const [loaded,setLoaded] = useState<boolean>(false)
 
     useEffect(()=>{
         
+        setLoaded(true)
         const interval = setInterval(()=>{
             let i = getRandomInteger(word.length)
             states[i].set(value=>cycle(value))
@@ -57,9 +59,7 @@ const Word = ({word}:{
     return (
         <>
         <div
-        style={{
-            display:"flex",
-        }}
+        style={loaded?{display:"flex",opacity:1}:{display:"flex",opacity:0}}
         >
             {word.toUpperCase().split("").map((char,index)=>(
                 //@ts-ignore
