@@ -56,36 +56,9 @@ const Word = ({word}:{
 
     return (
         <>
-
-        <div style={{
-            margin:"1rem"
-        }}>
-
-        {
-        //word.toUpperCase().split("").map((char,index)=>(
-        //    <button 
-        //    onClick={()=>{
-        //        states[index].set(cycle(states[index].value))
-        //    }}
-        //    style={{
-        //        border:"none",
-        //        padding:10,
-        //        marginRight:10
-        //    }}
-        //    key={`button${char}${index}`}
-        //    >
-        //        {char}
-        //    </button>
-        //))
-        }
-
-        </div>
-
         <div
         style={{
-            width:"100%",
             display:"flex",
-            alignItems:"center"
         }}
         >
             {word.toUpperCase().split("").map((char,index)=>(

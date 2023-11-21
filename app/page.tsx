@@ -7,7 +7,11 @@ export default function Home() {
     <div style={{
       width:"100vw",
       height:"100vh",
-      background:`url(${wallpaper.src})`
+      background:`url(${wallpaper.src})`,
+      display: "flex",
+      flexDirection:"column",
+      alignItems: "center",
+      justifyContent: "center"
     }}>
       <Word word="The quick"/>
       <Word word="brown fox"/>
