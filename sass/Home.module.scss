@@ -30,6 +30,7 @@
         background: linear-gradient(45deg,magenta, blue);
         -webkit-background-clip: text;
         color: transparent;
+        opacity: 0;
     }
 
     p {
@@ -37,6 +38,7 @@
         font-size: 2rem;
         width: 50%;
         font-weight: lighter;
+        opacity: 0;
     }
     
 }
@@ -49,6 +51,7 @@
     height: 5px;
     width: 50%;
     background: linear-gradient(45deg,magenta, blue);
+    opacity: 0;
 }
 
 @media screen and (max-width:1000px) {
