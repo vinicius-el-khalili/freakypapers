@@ -28,21 +28,20 @@ const Hero = () => {
 
             <div className={`${style.hero} hero`} ref={rootRef} >
                 <h1 className="heroH1">
-                    <div>MAGAZINE</div>
-                    <div>LETTERS</div>
+                    <div>BAGULHOS</div>
+                    <div>BRISA</div>
                 </h1>
 
                 <div className={`${style.separator} separator`}/>
                 <p className="paragraph">
-                    A proof of concept implementation of changing paper cut letters in ReactJS.
+                    Uns bagulho brisa pra ficar brisand. Feito em NextJS.
                 </p>
             </div>
 
             <div className={`${style.freakyLetters} freakyLetters`}>
-                <Word word="abcdefg"/>
-                <Word word="hijklmn"/>
-                <Word word="opqrstu"/>
-                <Word word="vxwyz"/>
+                <Word word="gente"/>
+                <Word word="que"/>
+                <Word word="brisa"/>
             </div>
 
           </div>

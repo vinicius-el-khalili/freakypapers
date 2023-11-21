@@ -51,7 +51,7 @@ const Word = ({word}:{
         const interval = setInterval(()=>{
             let i = getRandomInteger(word.length)
             states[i].set(value=>cycle(value))
-        },1000)
+        },250)
         return () => clearInterval(interval)
 
     },[])
