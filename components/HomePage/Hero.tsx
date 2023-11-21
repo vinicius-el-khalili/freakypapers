@@ -14,7 +14,7 @@ const Hero = () => {
 
             timelineRef.current = gsap.timeline()
             .fromTo(".heroH1",{opacity:0,x:"-25%"},{opacity:1,x:0})
-            .fromTo(".separator",{width:0},{width:"50%"})
+            .fromTo(".separator",{opacity:0,width:0},{opacity:1,width:"50%"})
             .fromTo(".paragraph",{opacity:0,x:"25%"},{opacity:1,x:0})
 
         }, rootRef)
