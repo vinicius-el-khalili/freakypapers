@@ -5,7 +5,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(235, 235, 235);
+    background-color: #353535;
+    color:white;
 
 }
 
@@ -16,7 +17,6 @@
 
 .hero {
 
-    color: black;
     justify-self: center;
     text-align: center;
     display: flex;
@@ -34,7 +34,7 @@
     }
 
     p {
-        margin-top: 2rem;
+        margin-top: 1rem;
         font-size: 2rem;
         width: 50%;
         font-weight: lighter;
@@ -56,8 +56,8 @@
 
 @media screen and (max-width:1000px) {
     .gridContainer{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        display: flex;
+        flex-direction: column;
     }
     .hero {
         h1 {
@@ -65,14 +65,11 @@
         }
         p {
             width: 60%;
-            padding: 1rem;
         }
     }
     .freakyLetters{
         justify-self: center;
-        align-self: start;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
+        margin-top: 2.5rem;
     }
 }
 

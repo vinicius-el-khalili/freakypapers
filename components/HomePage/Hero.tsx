@@ -34,7 +34,7 @@ const Hero = () => {
 
                 <div className={`${style.separator} separator`}/>
                 <p className="paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    A proof of concept implementation of changing paper cut letters in ReactJS.
                 </p>
             </div>
 
