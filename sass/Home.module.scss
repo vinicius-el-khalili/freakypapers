@@ -7,8 +7,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #353535;
+    background-color: black;
     color:white;
+    font-family: 'Courier New', Courier, monospace;
 
 }
 
@@ -28,10 +29,10 @@
 
     h1 {
         font-size: 6rem;
-        font-weight: bolder;
-        background: linear-gradient(45deg,magenta, blue);
-        -webkit-background-clip: text;
-        color: transparent;
+        font-weight: lighter;
+        // background: linear-gradient(45deg,magenta, blue);
+        //-webkit-background-clip: text;
+        //color: transparent;
         opacity: 0;
     }
 
@@ -52,7 +53,8 @@
 .separator {
     height: 5px;
     width: 50%;
-    background: linear-gradient(45deg,magenta, blue);
+    //background: linear-gradient(45deg,magenta, blue);
+    background-color: white;
     opacity: 0;
 }
 
