@@ -1,0 +1,23 @@
+.main {
+    margin: auto;
+    max-width: 45rem;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: white;
+    color: black;
+}
+
+.span_on {
+    background-color: black;
+    color: white;
+    transition: .5s;
+}
+
+.span {
+    width: 0;
+    cursor: default;
+}
