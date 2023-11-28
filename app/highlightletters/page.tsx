@@ -1,66 +1,67 @@
 import style from "@/sass/highlightletters/HighLigthLetters.module.scss"
 import HilightLetters from "@/components/highlightletters/HighLightLetters";
+import Image from "next/image";
+
 const Page = () => {
     return (<div className={style.main}>
     
+    <div>
+        <h1>Geopoliticus Adult Watching the Death of the Old Man</h1>
+        <h3>On the contemporary political situation(s) and their implications for the future</h3>
+    </div>
+
+    <div className={style.head}>
+        <img
+        src="/pills.png"
+        />
+        <div>
+            <p>
+                by 
+            </p>
+            <p>
+               <u><a href="https://medium.com/@Pills.for.thoughts">Pills for thoughts</a></u>
+            </p>
+            <p>
+                3 min read
+            </p>            
+        </div>
+    </div>
+
+    <img 
+    className={style.image}
+    src={"/salvador.webp"}
+    style={{objectFit:"contain"}}
+    alt=""/>
+
+
+
     <p>
-    <HilightLetters 
+    <HilightLetters
     text={`
-    Não sou nada.
-    Nunca serei nada.
-    Não posso querer ser nada.
-    À parte isso, tenho em mim todos os sonhos do mundo.
+    In his new book, “Principles for Dealing with the Changing World Order: Why Nations Succeed or Fail,” Ray Dalio discusses very interesting aspects about the rise and fall of empires during the last 500 years and the commonalities they all exhibit.
+    `}
+    />
+    </p>
+
+    <p>
+    <HilightLetters
+    text={`
+    Dalio noticed a unique convergence of political and economic conditions a few years ago, conditions he hadn’t encountered before. These included enormous debts and zero to near-zero interest rates, leading to the massive printing of money in the world’s three major reserve currencies. Additionally, significant political and social conflicts arose within countries, especially the United States, driven by the largest wealth, political, and values disparities in over a century. Simultaneously, a rising global power, China, challenged the existing world order.
     `}
     />
     </p>
     <p>
     <HilightLetters
     text={`
-    Janelas do meu quarto,
-    Do meu quarto de um dos milhões do mundo que ninguém sabe quem é
-    (E se soubessem quem é, o que saberiam?),
-    Dais para o mistério de uma rua cruzada constantemente por gente,
-    Para uma rua inacessível a todos os pensamentos,
-    Real, impossivelmente real, certa, desconhecidamente certa,
-    Com o mistério das coisas por baixo das pedras e dos seres,
-    Com a morte a pôr humidade nas paredes e cabelos brancos nos homens,
-    Com o Destino a conduzir a carroça de tudo pela estrada de nada.
+    The last time such a confluence of factors occurred was between 1930 and 1945. This realisation prompted Dalio to search for recurring patterns and cause-and-effect relationships underlying major shifts in wealth and power over the last 500 years.
     `}
     />
     </p>
     <p>
     <HilightLetters
     text={`
-    Estou hoje vencido, como se soubesse a verdade.
-    Estou hoje lúcido, como se estivesse para morrer,
-    E não tivesse mais irmandade com as coisas
-    Senão uma despedida, tornando-se esta casa e este lado da rua
-    A fileira de carruagens de um comboio, e uma partida apitada
-    De dentro da minha cabeça,
-    E uma sacudidela dos meus nervos e um ranger de ossos na ida.`}
-    />
-    </p>
-    <p>
-    <HilightLetters
-    text={`
-    Estou hoje perplexo como quem pensou e achou e esqueceu.
-    Estou hoje dividido entre a lealdade que devo
-    À Tabacaria do outro lado da rua, como coisa real por fora,
-    E à sensação de que tudo é sonho, como coisa real por dentro.
+    Current conflicts and potential military alliances, such as the Russo-Ukrainian and Israeli–Palestinian conflicts, combined with the economic and political crisis in the USA, may indicate early signs of a shift in the world order. Dalio has raised the possibility of China’s ascent, considering all the factors used in his analysis.
     `}
-    />
-    </p>
-    <p>
-    <HilightLetters
-    text={`
-    Falhei em tudo.
-    Como não fiz propósito nenhum, talvez tudo fosse nada.
-    A aprendizagem que me deram,
-    Desci dela pela janela das traseiras da casa,
-    Fui até ao campo com grandes propósitos.
-    Mas lá encontrei só ervas e árvores,
-    E quando havia gente era igual à outra.
-    Saio da janela, sento-me numa cadeira. Em que hei-de pensar?`}
     />
     </p>
 
