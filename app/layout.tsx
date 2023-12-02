@@ -21,7 +21,7 @@ export default function RootLayout({
         {children}
         <footer className={style.footer}>
           <Link href={"https://github.com/vinicius-el-khalili/freakypapers"} target='_blank'>
-            <div>Github<FaGithub/></div>
+            {/* <div>Github<FaGithub/></div> */}
           </Link>
         </footer>
       </body>

@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Avestrava';
+    src: url('/fonts/Avestrava.ttf') format('truetype');
+}
+
+.container {
+    cursor: none;
+}
+
+.boxesContainer {
+    display: flex;
+    align-items: center;
+    font-family: "Avestrava";
+    height: 100vh;
+    h1 {
+        font-size: 30vw;
+        font-weight: lighter;
+        z-index: 2;
+    }
+}
+
+
+@keyframes skewRotation { 
+    0% {
+        transform: skewX(0deg);
+    }
+    50% {
+        transform: skewX(180deg) translateY(10vh);
+        rotate: 35deg;
+        opacity: .2;
+        background-color: lightblue;
+    }
+    100% {
+        transform: skewX(360deg);
+    }
+}
+
+@keyframes skewRotationAnti { 
+    0% {
+        transform: skewX(0deg);
+    }
+    50% {
+        transform: skewX(-180deg) translateY(-10vh);
+    }
+    100% {
+        transform: skewX(-360deg);
+        background-color: RED;
+    }
+}
+$boxSize: 5vw;
+.diamond1 {
+    width: $boxSize;
+    height: $boxSize;
+    transform: skewX(45deg);
+    animation: skewRotation 4s infinite ease;
+    box-shadow: 0 0 15px cyan;
+    z-index: 2;
+}
+.diamond2 {
+    width: $boxSize;
+    height: $boxSize;
+    transform: skewX(-30deg);
+    box-shadow: 0 0 25px white;
+    animation: skewRotation 2.5s infinite ease;
+}
+
+.diamond3 {
+    width: $boxSize;
+    height: $boxSize;
+    transform: skewX(-30deg);
+    background-color: darkcyan;
+    transition: .5s;
+    box-shadow: 0 0 25px blue;
+    animation: skewRotationAnti 3s infinite ease;
+}
+.diamond4 {
+    width: $boxSize;
+    height: $boxSize;
+    transform: skewX(45deg);
+    transition: .5s;
+    animation: skewRotationAnti 4s infinite ease;
+    box-shadow: 0 0 15px red;
+    z-index: 2;
+}
+
+.textContainer {
+    padding: 2rem;
+    position: absolute;
+    color: black;
+    animation: textAnimation 4s infinite;
+    z-index: 2;
+}
+@keyframes textAnimation { 
+    0% {
+        color: darkred;
+        text-shadow: 15px 15px lightcoral;
+    }
+    50% {
+        color: darkblue;
+        color: lightblue;
+
+        text-shadow: 15px 25px blue;
+    }
+    75% {
+        color: darkblue;
+        text-shadow: -5px -5px blue;
+    }
+    100% {
+        color: darkred;
+        text-shadow: 15px 15px red;
+    }
+}
