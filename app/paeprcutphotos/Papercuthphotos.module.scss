@@ -1,0 +1,90 @@
+.Papercuthphotos {
+    
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    
+}
+
+.imgContainer {
+
+    position: absolute;
+    width:  100vw;
+    height: 100vh;
+
+    //filter: hue-rotate(90deg);
+    //filter: grayscale(100%) contrast(200%) invert(30%);
+}
+$glassHeight: 33.33%;
+$glassWidth: 100%;
+
+.glasses {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.glass1 {
+    position: absolute;
+    height: $glassHeight;
+    width: $glassWidth;
+    transition: 1s;
+}
+
+.glass2 {
+    position: absolute;
+    height: $glassHeight;
+    width: $glassWidth;
+    transition: 1s;
+}
+
+.glass3 {
+    position: absolute;
+    width: $glassWidth;
+    height: $glassHeight;
+    transition: 1s;
+}
+
+.buttonsContainer {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: .5rem;
+    z-index: 3;
+    button {
+        border: 1px solid transparent;
+        background-color: black;
+        color: white;
+        padding: .5rem;
+        &:hover {
+            border-bottom: 1px solid #c2c2c2;
+        }
+        &:active {
+            border-bottom: 1px solid black;
+        }
+    }
+}
+
+.menuON {
+    .glass1 {
+        backdrop-filter: blur(10px);
+    }
+    
+    .glass2 {
+        backdrop-filter: invert(70%);
+        transform: translateY(100%);
+    }
+    
+    .glass3 {
+        backdrop-filter: sepia(50%) contrast(60%);
+        transform: translateY(200%);        
+    }
+}
