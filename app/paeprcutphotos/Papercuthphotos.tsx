@@ -10,7 +10,9 @@ const Papercuthphotos = () => {
     <div className={style.Papercuthphotos}>
         
         <div className={style.imgContainer}>
+
             <Image src={"/joris_teatro.jpg"} alt="ducks" fill style={{objectFit:"contain"}}/>
+            
         </div>
 
         <div className={menu?`${style.glasses} ${style.menuON}`:style.glasses}>

@@ -1,0 +1,40 @@
+$image-size: 200px;
+
+.Hero {
+
+    background-color: darkblue;
+    color: black;
+    font-size: 4rem;
+    height: calc(100vh - 4rem);
+    width: calc(100vw -  4rem);
+    margin: 2rem;
+    border-radius: $image-size/2 0 0 0;
+
+    display: grid;
+    grid-template-columns: $image-size 1fr;
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden;
+
+    .Image {
+
+        border: 12px solid black;
+        width: $image-size;
+        height: $image-size;
+        border-radius: 100%;
+        margin: 1px;
+
+    }
+
+    .navBar {
+        justify-self: end;
+        align-self: end;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name {
+        align-self: end;
+        transform: translateY(35px) translateX(-1px);
+    }
+
+}
