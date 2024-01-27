@@ -4,13 +4,13 @@ const Hero = () => {
     return (
         <div className={style.Hero}>
             <div className={style.Image}>
-                
+
             </div>
             <div className={style.navBar}>
-                <div className={style.navButton}>About</div>
-                <div className={style.navButton}>Services</div>
-                <div className={style.navButton}>Work</div>
-                <div className={style.navButton}>Contact</div>
+                <div className={style.navButton}>Sobre</div>
+                <div className={style.navButton}>Tecnologias</div>
+                <div className={style.navButton}>Projetos</div>
+                <div className={style.navButton}>Contato</div>
             </div>
             <div className={style.name}>
                 <h1>VINICIUS</h1>
